@@ -168,7 +168,7 @@
 								<div class="category-block">
 									<div class="header">
 										<img width="100px" height="auto" src="<?php echo $row["image"] ?>" alt="image description">
-										<a href="detail-pokemon.php?id=<?php echo $row["id"] ?>"><h4><?php echo $row["name"] ?></h4></a>
+										<h4 class="title"><a href="detail-pokemon.php?id=<?php echo $row["id"] ?>"><?php echo $row["name"] ?></a></h4>
 									</div>
 									<ul class="category-list">
 										<li><a href="">Max CP <span><?php echo $row["max_cp"] ?></span></a></li>

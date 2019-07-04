@@ -223,13 +223,13 @@
                     <img width="100px" height="auto" src="<?php echo $row["image"] ?>" alt="image description">
                   </td>
                   <td class="product-details">
-                    <h3 class="title"><?php echo $row["name"] ?></h3>
-                    <span><strong>Max CP:</strong> <?php echo $row["max_cp"] ?></span>
-                    <span><strong>Attact:</strong> <?php echo $row["attact"] ?></span>
-                    <span><strong>Defense:</strong> <?php echo $row["defense"] ?></span>
-                    <span><strong>Stamina:</strong> <?php echo $row["stamina"] ?></span>
+                    <h3 class="title"><a href="detail-pokemon.php?id=<?php echo $row["id"] ?>"><?php echo $row["name"] ?></a></h3>
+                    <span><strong>Max CP:</strong><?php echo $row["max_cp"] ?></span>
+                    <span><strong>Attact:</strong><?php echo $row["attact"] ?></span>
+                    <span><strong>Defense:</strong><?php echo $row["defense"] ?></span>
+                    <span><strong>Stamina:</strong><?php echo $row["stamina"] ?></span>
                   </td>
-                  <td class="product-category"><span class="categories"><?php echo getTypeOfPokemon($row["id"])?></span></td>
+                  <td class="product-category"><span class="categories"><b><?php echo getTypeOfPokemon($row["id"])?></b></span></td>
                 </tr>
                 <?php } ?>
               </tbody>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 04, 2019 at 02:58 PM
+-- Generation Time: Jul 04, 2019 at 06:27 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -22,8 +22,6 @@ SET time_zone = "+00:00";
 -- Database: `db_pokemon`
 --
 
-CREATE DATABASE `db_pokemon`;
-use `db_pokemon`;
 -- --------------------------------------------------------
 
 --
@@ -168,7 +166,32 @@ INSERT INTO `weakness_of_type` (`id`, `type_id`, `weakness_of_type`) VALUES
 (29, 10, 7),
 (30, 10, 8),
 (31, 10, 12),
-(32, 10, 14);
+(32, 10, 14),
+(33, 11, 10),
+(34, 11, 12),
+(35, 11, 18),
+(36, 12, 4),
+(37, 12, 6),
+(38, 12, 7),
+(39, 12, 10),
+(40, 12, 16),
+(41, 12, 17),
+(42, 13, 6),
+(43, 14, 11),
+(44, 14, 15),
+(45, 15, 1),
+(46, 15, 2),
+(47, 15, 9),
+(48, 16, 6),
+(49, 16, 10),
+(50, 16, 11),
+(51, 16, 17),
+(52, 16, 18),
+(53, 17, 6),
+(54, 17, 7),
+(55, 17, 11),
+(56, 18, 4),
+(57, 18, 10);
 
 --
 -- Indexes for dumped tables
@@ -224,7 +247,7 @@ ALTER TABLE `type`
 -- AUTO_INCREMENT for table `weakness_of_type`
 --
 ALTER TABLE `weakness_of_type`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
